@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .box{
+            color: green;
+            background-color: azure;
+        }
+        .dark{
+            color: whitesmoke;
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="dv" class="box">
+        <h1 id="h">this is a heading</h1>
+        <img src="./img/img.jpg" alt="" srcset="">
+        <p id="g">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magni voluptate? Nam aliquid dolor molestiae aliquam veniam, asperiores officiis accusamus. Exercitationem ex voluptas assumenda officiis voluptatibus molestias unde reiciendis dicta.
+        Animi vitae facere obcaecati, modi consequuntur quisquam odio optio exercitationem necessitatibus a sunt, temporibus ipsum mollitia. Ullam repellat consectetur dolorum molestiae quae ex eligendi id placeat cumque. Unde, sapiente. Nisi.
+        Id atque inventore repudiandae neque ipsa sit ut architecto molestiae ratione illo ea, facilis soluta! Quod consequuntur tenetur magnam reprehenderit obcaecati ut perspiciatis. Repellendus sit nam officiis ipsum nobis suscipit.
+        Eaque minus dolorem, unde, incidunt possimus esse quia pariatur dolore accusamus cupiditate nulla itaque provident fuga laboriosam non! At, perspiciatis dolore distinctio quae quaerat mollitia quis inventore ratione numquam quibusdam.
+        Rerum, blanditiis! Magni nostrum, esse distinctio voluptate, optio facilis molestias, animi atque temporibus omnis dolorem ducimus. Magni saepe deleniti possimus, facere ullam atque neque, nam cum, placeat cupiditate illum ex?</p>
+       
+    </div>
+    <button onclick="ch()" id="p">change</button>
+</body>
+<script>
+    function ch() {
+        let a = document.getElementById("dv");
+        if (a.className == "box") {
+            let b = document.getElementById("p");
+            b.innerText = "wapas";
+
+            a. setAttribute("class", "dark");
+            let g = document.getElementById("h");
+            let r=document.getElementById("g");
+            r.innerText="kahna ram";
+            g.innerText = "hello";
+        } else {
+            a.setAttribute("class", "box");
+            let b = document.getElementById("p");
+            b.innerText = "Changing";
+            let g = document.getElementById("h");
+            g.innerText = "hello change";
+            let r=document.getElementById("g");
+            r.innerText="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, magni voluptate? Nam aliquid dolor molestiae aliquam veniam, asperiores officiis accusamus. Exercitationem ex voluptas assumenda officiis voluptatibus molestias unde reiciendis dicta. Animi vitae facere obcaecati, modi consequuntur quisquam odio optio exercitationem necessitatibus a sunt, temporibus ipsum mollitia. Ullam repellat consectetur dolorum molestiae quae ex eligendi id placeat cumque. Unde, sapiente. Nisi.     Id atque inventore repudiandae neque ipsa sit ut architecto molestiae ratione illo ea, facilis soluta! Quod consequuntur tenetur magnam reprehenderit obcaecati ut perspiciatis. Repellendus sit nam officiis ipsum nobis suscipit. Eaque minus dolorem, unde, incidunt possimus esse quia pariatur dolore accusamus cupiditate nulla itaque provident fuga laboriosam non! At, perspiciatis dolore distinctio quae quaerat mollitia quis inventore ratione numquam quibusdam.Rerum, blanditiis! Magni nostrum, esse distinctio voluptate, optio facilis molestias, animi atque temporibus omnis dolorem ducimus. Magni saepe deleniti possimus, facere ullam atque neque, nam cum, placeat cupiditate illum ex?";
+        }
+    }
+</script>
+</html>
